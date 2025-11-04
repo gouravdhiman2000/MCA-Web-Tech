@@ -12,4 +12,3 @@ btn.addEventListener('click',()=>{
 })
 
 
-pa
