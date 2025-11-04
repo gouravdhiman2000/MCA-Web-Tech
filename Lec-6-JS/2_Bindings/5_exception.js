@@ -1,11 +1,15 @@
-function person(name,age,hobby){
-    this.name = name;
-    this.age = age;
-    this.hobby = hobby;
+function outerFun(){
+    console.log("Outer Fun",this);
+    function innerFun(){
+        console.log("Inner Fun",this);
+        // here this points to window because its a default this
+    }
+    innerFun();
 }
 
-let gourav = new person("Gourav",18,"Trekking");
-console.log(gourav);
+let obj = {
+    a : 1,
+    b : 2
+}
 
-let keshav = new person("keshav",24,"Smoking");
-console.log(keshav);
+outerFun.call(obj);
