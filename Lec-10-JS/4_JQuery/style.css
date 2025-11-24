@@ -66,7 +66,7 @@
     cursor: pointer;
 }
 
-li:first-child .btngroup .upBtn, li:last-child .btngroup .downBtn {
+li:first-child .btnGroup .upBtn, li:last-child .btnGroup .downBtn {
     display: none;
 }
 
